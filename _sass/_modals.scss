@@ -1,18 +1,26 @@
 .modal {
+	.modal-header, .modal-footer {
+		border: none;
+	}
+	h4 {
+		margin-top: 1.5rem;
+	}
 	p {
 		text-align: left;
 		font-weight: 300;
 		font-size: 1.5rem;
+		line-height: 1.4;
+		padding: 0 2rem;
 	}
 	.btn {
 		display: inline-block;
-		margin-bottom: 1rem;
+		margin-bottom: 2rem;
 	}
 	.close-modal-button {
-			color: $primary-color;
-			&:hover {
-				color: darken($primary-color, 10%);
-			}
+		color: $primary-color;
+		&:hover {
+			color: darken($primary-color, 10%);
+		}
 	}
 	.modal-footer {
 		text-align: center;

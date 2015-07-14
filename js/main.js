@@ -5,6 +5,7 @@
     $('.logo-carousel').slick({
         slidesToShow: 4,
         infinite: true,
+        arrows: true,
         responsive: [
 		    {
 		      breakpoint: 520,

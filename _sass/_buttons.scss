@@ -27,6 +27,9 @@
 .hollow-button {
   border: 3px solid #cceef1;
   color: $primary-color;
+  &:focus {
+  	color: $primary-color;
+  }
   &:hover {
   	background: $primary-color;
   	color: white;
@@ -63,12 +66,8 @@ header  {
 
 	.btn.menu-btn {
 		margin-left: 1rem;
-		background: none;
 		top: -.775rem;
 		padding: .35rem 1rem 0.075rem 1rem;
-		&:hover {
-			border-color: $primary-color;
-		}
 		i.fa {
 			font-size: 2rem;
 		}

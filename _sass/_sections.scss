@@ -69,6 +69,9 @@ section.third-party-logos {
 	padding-top: 4rem;
 	.logo-carousel {
 		margin-bottom: 4rem;
+		div:focus {
+			outline: none;
+		}
 		img {
 			margin: 0 auto;
 			width: 8rem;
