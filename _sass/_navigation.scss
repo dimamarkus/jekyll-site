@@ -1,0 +1,51 @@
+nav.mobile-menu, a.menu-btn {
+	display: none;
+}
+@include media-query($on-large-screen) {
+	nav.mobile-menu, a.menu-btn {
+		display: inline-block;
+	}
+}
+
+header nav {
+	ul li {
+		font-weight: 700;
+		font-size: 1.55rem;
+		&:first-child a {
+			color: $black;
+		}
+		a {
+			color: #9b9b9b;
+			&:hover {
+				text-decoration: none;
+				color: $black;
+			}
+		}
+	}
+}
+
+header nav.desktop-menu  {
+	float: right;
+	display: inline-block;
+	@include media-query(1250px) {
+		display: none;
+	}
+	ul li {
+		margin: 0 2rem;
+		display: inline-block;
+		text-transform: uppercase;
+		&:last-child {
+			margin-right: 5rem;
+		}
+	}
+}
+
+header nav.mobile-menu  {
+	ul {
+		padding: 0;
+	}
+	li {
+		display: block;
+		margin-bottom: 2rem;
+	}
+}

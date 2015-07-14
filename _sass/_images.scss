@@ -1,0 +1,21 @@
+.logo {
+	display: inline-block;
+	max-width: 25rem;
+	@include media-query(560px) {
+		max-width: 18rem;
+	}
+}
+
+.hero-image {
+	width: 100%;
+	min-height: 45rem;
+	margin-top: 6rem;
+	background-image: url('/images/hero.jpg');
+	background-position: center 40%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	@include media-query(1000px) {
+		min-height: 40rem;
+		margin-top: 2rem;
+	}
+}

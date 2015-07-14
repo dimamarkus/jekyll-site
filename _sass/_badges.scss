@@ -1,0 +1,74 @@
+.experience-icon {
+	border-radius: 100%;
+	background: $primary-color;
+	width: 17rem;
+	color: white;
+	font-size: 7rem;
+	padding: 3.5rem;
+	margin: 0 auto;
+	margin-bottom: 4rem;
+	i.fa {
+		color: white;
+	}
+	span {
+		color: white;
+		font-family: HelveticaNeue;
+		font-weight: bold;
+		font-size: 3.25rem;
+		position: relative;
+		top: -1.25rem;
+		left: -.8rem;
+	}
+	&.alert{
+		background: $alert-color;
+	}
+	&.warning{
+		background: $warning-color;
+	}
+	&.success{
+		background: $success-color;
+	}
+}
+
+.stat-icon {
+	border-radius: 100%;
+	background: white;
+	color: $primary-color;
+	font-size: 4rem;
+	font-weight: 300;
+	width: 13rem;
+	line-height: 1;
+	padding: 4rem 0rem 1rem 2rem;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+	span.number {
+		position: relative;
+		left: .5rem;
+	}
+	span.units {
+		color: #909090;
+		text-transform: uppercase;
+		font-size: 1.1rem;
+		font-weight: 500;
+		position: relative;
+		top: -2rem;
+		left: -1rem;
+	}
+	span.plus {
+		position: relative;
+		top: -1.25rem;
+		font-size: 2rem;
+	}
+	span:not(.units) {
+		color: $primary-color;
+	}
+	&.info span:not(.units) {
+		color: $info-color;
+	}
+	&.warning span:not(.units) {
+		color: $warning-color;
+	}
+	&.success span:not(.units) {
+		color: $success-color;
+	}
+}

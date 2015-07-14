@@ -1,0 +1,124 @@
+section.introduction {
+  background: #f9fafc;
+  border-bottom: 2px solid $grey;
+  .blurb {
+  	font-size: 2.3rem;
+  	font-weight: 100;
+  	margin-bottom: 2rem;
+  }
+}
+
+
+section.primary {
+	padding-top: 4rem;
+	article {
+		padding: 0 2rem;
+		padding-bottom: 3rem;
+		float: left;
+		display: inline-block;
+		width: 25%;
+		@include media-query($on-medium-screen) {
+			width: 50%;
+		}
+		@include media-query($on-small-screen) {
+			width: 100%;
+		}
+	}
+	.blurb {
+		font-size: 2.25rem;
+		margin-bottom: 5rem;
+	}
+	p, a:not(.btn) {
+		font-family: MuseoSans;
+		display: block;
+		font-weight: 300;
+		font-size: 1.8rem;
+		margin-bottom: 1rem;
+	}
+	a:not(.btn) {
+		color: $primary-color;
+		text-decoration: underline;
+		&:hover {
+			color: darken($primary-color, 10%);
+		}
+	}
+}
+
+
+section.secondary {
+	background: $success-color;
+	h4 {
+		color: white;
+	}
+	p {
+		font-size: 2.3rem;
+		font-weight: 100;
+		color: white;
+		margin-bottom: 2rem;
+	}
+	@include media-query($on-medium-screen) {
+		padding: 4rem 0 3rem 0;
+		.blurb {
+			margin-bottom: 5rem;
+		}
+	}
+}
+
+
+section.third-party-logos {
+	padding-top: 4rem;
+	.logo-carousel {
+		margin-bottom: 4rem;
+		img {
+			margin: 0 auto;
+			width: 8rem;
+		}
+		.css-icon {
+			width: 6rem;
+		}
+	}
+	border-bottom: 1px solid $grey;
+}
+
+
+section.my-stats {
+	background: #f9fafc;
+	@include media-query($on-medium-screen) {
+		padding: 6rem 0 7rem 0;
+	}
+	ul {
+		list-style: none;
+		padding-left: 0;
+		display: inline-block;
+		li {
+			float: left;
+			padding: 0 4rem;
+			display: inline-block;
+			width: 25%;
+			margin-bottom: 1.5rem;
+			@include media-query($on-medium-screen) {
+				width: 50%;
+				margin-bottom: 2rem;
+			}
+			@include media-query($on-small-screen) {
+				width: 100%;
+			}
+		}
+	}
+	p {
+		margin-bottom: 2rem;
+		font-weight: 300;
+		font-size: 1.5rem;
+	}
+}
+
+
+section.with-cta {
+	background: $primary-color;
+	padding: 5rem 0 3rem 0;
+	margin-bottom: 6rem;
+}
+
+
+
+

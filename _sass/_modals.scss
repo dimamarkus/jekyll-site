@@ -1,0 +1,20 @@
+.modal {
+	p {
+		text-align: left;
+		font-weight: 300;
+		font-size: 1.5rem;
+	}
+	.btn {
+		display: inline-block;
+		margin-bottom: 1rem;
+	}
+	.close-modal-button {
+			color: $primary-color;
+			&:hover {
+				color: darken($primary-color, 10%);
+			}
+	}
+	.modal-footer {
+		text-align: center;
+	}
+}
