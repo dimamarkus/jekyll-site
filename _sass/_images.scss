@@ -9,9 +9,9 @@
 .hero-image {
 	width: 100%;
 	min-height: 45rem;
-	margin-top: 6rem;
-	background-image: url('/images/hero.jpg');
-	background-position: center 40%;
+	// margin-top: 6rem;
+	background-image: url('/images/Knewton-apple.png');
+	background-position: center 75%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	@include media-query(1000px) {
