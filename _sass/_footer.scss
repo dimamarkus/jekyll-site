@@ -17,7 +17,8 @@ footer {
 	}
 	a {
 		color: white;
-		&:hover {
+		text-decoration: none;
+		&:hover, &:focus {
 			text-decoration: none;
 			color: $primary-color;
 		}

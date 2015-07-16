@@ -1,4 +1,7 @@
 .modal {
+	.modal-content {
+		background: $secondary-background;
+	}
 	.modal-header, .modal-footer {
 		border: none;
 	}
@@ -6,11 +9,29 @@
 		margin-top: 1.5rem;
 	}
 	p {
-		text-align: left;
 		font-weight: 300;
-		font-size: 1.5rem;
+		font-size: 1.75rem;
 		line-height: 1.4;
 		padding: 0 2rem;
+	}
+	p.align-left {
+		text-align: left;
+	}
+	section.secondary p {
+		font-size: 1.75rem;
+	}
+	article {
+		margin-bottom: 5rem;
+		p {
+			padding: 0;
+		}
+	}
+	img {
+		margin: 0 auto;
+		margin-bottom: 2rem;
+		&.shrink-image {
+			max-width: 20rem;
+		}
 	}
 	.btn {
 		display: inline-block;

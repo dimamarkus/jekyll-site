@@ -51,6 +51,13 @@ h6 {
 	color: $text-color;
 }
 
+section a:not(.btn), .modal a:not(.btn) {
+	color: $primary-color;
+	text-decoration: underline;
+	&:hover {
+		color: darken($primary-color, 10%);
+	}
+}
 
 .alert-link {
 	font-size: 1.75rem;

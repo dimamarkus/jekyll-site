@@ -13,9 +13,12 @@
 	background-image: url('/images/Knewton-apple.png');
 	background-position: center 75%;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	@include media-query(1000px) {
 		min-height: 40rem;
 		margin-top: 2rem;
+	}
+	@include media-query(1500px) {
+		background-size: cover;
 	}
 }
