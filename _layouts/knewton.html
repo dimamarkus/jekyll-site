@@ -1,21 +1,29 @@
 <!doctype html>
+<head>
+	<title> Dima Markus | UX Designer</title>
+	<meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="home" href="{{ site.url }}" />
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.6/slick.min.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.6/slick-theme.min.css">
+	<link rel="stylesheet" href="/css/knewton.css" >
+</head>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="no-js">
-
-  {% include head.html %}
-
 	<body>
-
-		{% include header.html %}
-
-		{{ content }}
-
-    {% include footer.html %}
-
+		{% include knewton/00-header.html %}
+		<div class="page-wrap">
+			{{ content }}
+    	{% include knewton/07-footer.html %}
+		</div>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.6/slick.min.js"></script>
-    <script src="/js/main.js"></script>
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.6/slick.min.js"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="/js/knewton.js"></script>
  	</body>
 </html>

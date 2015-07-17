@@ -11,12 +11,9 @@ header nav {
 	ul li {
 		font-weight: 700;
 		font-size: 1.55rem;
-		&:first-child a {
-			color: $black;
-		}
 		a {
 			color: #9b9b9b;
-			&:hover {
+			&:hover, &:focus, &:active {
 				text-decoration: none;
 				color: $black;
 			}

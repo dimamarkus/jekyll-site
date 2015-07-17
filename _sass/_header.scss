@@ -1,8 +1,0 @@
-header {
-	padding: 4rem 0;
-	text-align: left;
-	border-bottom: 1px solid #e2e2e2;
-	@include media-query($on-large-screen) {
-		border-color: $primary-color;
-	}
-}

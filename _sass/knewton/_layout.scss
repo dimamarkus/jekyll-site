@@ -1,9 +1,26 @@
+
+
+.page-wrap {
+	border-top: 1px solid #e2e2e2;
+	background: white;
+	transition: all .4s ease;
+	position: relative;
+	z-index: 9999;
+	@include media-query($on-large-screen) {
+		top: -22rem;
+		border-color: $primary-color;
+	}
+	&.descended {
+		top: 0;
+	}
+}
+
 body {
   text-align: center;
 }
 
 .inner {
-	max-width: 85%;
+	max-width: 80%;
 	margin: 0 auto;
 }
 

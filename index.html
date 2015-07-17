@@ -1,23 +1,15 @@
 ---
 layout: default
+permalink: /
 ---
 
-<div class="home">
+<h1>Dima Markus</h1>
+<h2 class="thin">I design and build experiences on the web.</h2>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<ul class="social-icons">
+  <li><a href="mailto:markus.dmitriy@gmail.com"> <i class="fa fa-envelope"></i> email</a></li>
+  <li><a href="https://twitter.com/dimamarkus"> <i class="fa fa-twitter"></i> twitter</a></li>
+  <li><a href="https://github.com/dimamarkus" > <i class="fa fa-github"></i>  github</a></li>
+  <li><a href="https://codepen.io/dimamarkus"> <i class="fa fa-codepen"></i> codepen</a></li>
+  <li><a href="https://mixcloud.com/dimamarkus"> <img src="/images/mixcloud-logo.png" alt=""> mixcloud</a></li>
+</ul>

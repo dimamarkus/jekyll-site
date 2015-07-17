@@ -57,9 +57,9 @@ header  {
 		position: relative;
 	}
 	.btn.cta {
-		top: -1rem;
+		top: -0.7rem;
 		font-size: 1rem;
-		padding: .9rem 2rem .5rem 2rem;
+		padding: .4rem 2rem .3rem 2rem;
 		@include media-query(560px) {
 			display: none;
 		}
@@ -71,6 +71,13 @@ header  {
 		padding: .35rem 1rem 0.075rem 1rem;
 		i.fa {
 			font-size: 2rem;
+		}
+		&.full {
+			border-color: $primary-color;
+			background: $primary-color;
+			i.fa {
+				color: white;
+			}
 		}
 	}
 }

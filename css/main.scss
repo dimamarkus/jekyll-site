@@ -3,18 +3,85 @@
 ---
 @charset "utf-8";
 
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-$spacing-unit:     30px;
+$black: #2a2a2a;
+$primary-color: #4b95c3;
 
-// Width of the content area
-$content-width:     800px;
-$on-small-screen:   520px;
-$on-medium-screen:  995px;
-$on-large-screen:   1280px;
+@font-face {
+	font-family: Montserrat;
+	font-weight: 900;
+	src: url("/fonts/Montserrat-Black.otf") format("opentype");
+}
+@font-face {
+	font-family: Montserrat;
+	font-weight: 700;
+	src: url("/fonts/Montserrat-Bold.otf") format("opentype");
+}
+@font-face {
+	font-family: Montserrat;
+	font-weight: 500;
+	src: url("/fonts/Montserrat-Regular.otf") format("opentype");
+}
+@font-face {
+	font-family: Montserrat;
+	font-weight: 300;
+	src: url("/fonts/Montserrat-Light.otf") format("opentype");
+}
+@font-face {
+	font-family: Montserrat;
+	font-weight: 100;
+	src: url("/fonts/Montserrat-Thin.otf") format("opentype");
+}
+
+* {
+	font-family: Montserrat, HelveticaNeue, Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	color: $black;
+}
+
+html {
+	text-align: center;
+}
+
+div.container  {
+  margin: 0 auto;
+  margin-right: -50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.thin {
+	font-weight: 100;
+}
+
+h2 {
+	padding: 0 2rem;
+}
+
+ul.social-icons {
+	margin-top: 3rem;
+	list-style: none;
+	li {
+		display: inline-block;
+		margin: .6rem auto;
+		margin-right: 3rem;
+		a {
+			font-weight: 200;
+			font-size: 2rem;
+			text-decoration: none;
+			color: $primary-color;
+		}
+		i.fa {
+			color: $primary-color;
+		}
+		img {
+			position: relative;
+			top: .2rem;
+			max-width: 3.2rem;
+		}
+	}
+}
 
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
@@ -22,20 +89,6 @@ $on-large-screen:   1280px;
   }
 }
 
-@import
-  "colors",
-  "fonts",
-  "layout",
-  "text",
-  "buttons",
-  "header",
-  "footer",
-  "navigation",
-  "modals",
-  "badges",
-  "sections",
-  "images"
-;
 
 
 

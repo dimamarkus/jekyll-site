@@ -30,7 +30,15 @@
         }
       }
     });
+
+   $('.menu-btn').on('click', function(e) {
+      $('.page-wrap').toggleClass("descended");
+      $('.menu-btn').toggleClass("full");
+      e.preventDefault();
+    });
+
   });
+
 
 })();
 
