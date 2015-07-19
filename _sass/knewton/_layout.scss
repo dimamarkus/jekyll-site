@@ -5,7 +5,7 @@
 	background: white;
 	transition: all .4s ease;
 	position: relative;
-	z-index: 9999;
+	z-index: 2;
 	@include media-query($on-large-screen) {
 		top: -22rem;
 		border-color: $primary-color;
