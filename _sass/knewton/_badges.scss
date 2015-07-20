@@ -1,23 +1,28 @@
-.experience-icon {
+.badge {
 	border-radius: 100%;
+		display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+ 	margin: 0 auto;
+	margin-bottom: 3rem;
+}
+
+.experience-icon {
 	background: $primary-color;
-	width: 17rem;
+	width: 16rem;
+	height: 16rem;
 	color: white;
 	font-size: 7rem;
-	padding: 3.5rem;
-	margin: 0 auto;
-	margin-bottom: 4rem;
 	i.fa {
 		color: white;
+		margin: auto;
 	}
 	span {
 		color: white;
 		font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
 		font-weight: bold;
 		font-size: 3.25rem;
-		position: relative;
-		top: -1.25rem;
-		left: -.8rem;
+		margin: auto;
 	}
 	&.alert{
 		background: $alert-color;
@@ -31,33 +36,28 @@
 }
 
 .stat-icon {
-	border-radius: 100%;
 	background: white;
 	color: $primary-color;
 	font-size: 4rem;
 	font-weight: 300;
 	width: 13rem;
+	height: 13rem;
 	line-height: 1;
-	padding: 4rem 0rem 1rem 2rem;
-	margin: 0 auto;
-	margin-bottom: 2rem;
-	span.number {
-		position: relative;
-		left: .5rem;
-	}
+  .center {
+  	margin: auto;
+  }
 	span.units {
+		display: block;
 		color: #909090;
 		text-transform: uppercase;
 		font-size: 1.1rem;
 		font-weight: 500;
-		position: relative;
-		top: -2rem;
-		left: -1rem;
 	}
 	span.plus {
-		position: relative;
-		top: -1.25rem;
 		font-size: 2rem;
+		position: relative;
+		top: -1rem;
+		left: -.5rem;
 	}
 	span:not(.units) {
 		color: $primary-color;

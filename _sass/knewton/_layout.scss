@@ -1,17 +1,15 @@
-
-
 .page-wrap {
 	border-top: 1px solid #e2e2e2;
 	background: white;
 	transition: all .4s ease;
 	position: relative;
-	z-index: 2;
+	z-index: 100;
 	@include media-query($on-large-screen) {
-		top: -22rem;
+		margin-top: -22rem;
 		border-color: $primary-color;
 	}
 	&.descended {
-		top: 0;
+	 margin-top: 0;
 	}
 }
 

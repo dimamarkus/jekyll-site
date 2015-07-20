@@ -16,7 +16,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" class="no-js">
 	<body>
 
-		{{ content }}
+		{% include knewton/00-header.html %}
+
+		{% include knewton/00-subheader.html %}
+
+		<div class="page-wrap">
+
+			{{ content}}
+
+			{% include knewton/06-footer.html %}
+		</div>
+
 
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>

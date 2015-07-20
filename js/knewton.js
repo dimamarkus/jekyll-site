@@ -35,6 +35,20 @@
       $('.page-wrap').toggleClass("descended");
       $('.menu-btn').toggleClass("full");
       e.preventDefault();
+    })
+
+   $('.submenu-btn-plus').on('click', function(e) {
+      $('.mobile-submenu').toggleClass("descended");
+      $('.submenu-btn-plus').hide();
+      $('.submenu-btn-minus').show();
+      e.preventDefault();
+    });
+
+   $('.submenu-btn-minus').on('click', function(e) {
+      $('.mobile-submenu').toggleClass("descended");
+      $('.submenu-btn-minus').hide();
+      $('.submenu-btn-plus').show();
+      e.preventDefault();
     });
 
   });

@@ -59,7 +59,7 @@ section a:not(.btn), .modal a:not(.btn) {
 	}
 }
 
-.alert-link {
+a.alert-link, section a.alert-link {
 	font-size: 1.75rem;
 	font-weight: 300;
 	margin-bottom: 6rem;
