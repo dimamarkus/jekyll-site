@@ -51,22 +51,18 @@ h6 {
 	color: $text-color;
 }
 
-section a:not(.btn), .modal a:not(.btn) {
-	color: $primary-color;
-	text-decoration: underline;
-	&:hover {
-		color: darken($primary-color, 10%);
+.example-section {
+	h1 {
+		font-weight: 500;
 	}
-}
-
-a.alert-link, section a.alert-link {
-	font-size: 1.75rem;
-	font-weight: 300;
-	margin-bottom: 6rem;
-	color: $alert-color;
-	text-decoration: underline;
-	display: block;
-	&:hover {
-		color: darken($alert-color, 10%);
+	h2 {
+		font-weight: 100;
+	}
+	p {
+		font-weight: 300;
+	}
+	&.secondary p {
+		padding: 1rem;
+		font-size: 1.75rem;
 	}
 }

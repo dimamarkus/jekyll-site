@@ -39,6 +39,7 @@
 
    $('.submenu-btn-plus').on('click', function(e) {
       $('.mobile-submenu').toggleClass("descended");
+      $('.page-wrap').toggleClass("descended-further");
       $('.submenu-btn-plus').hide();
       $('.submenu-btn-minus').show();
       e.preventDefault();
@@ -46,6 +47,7 @@
 
    $('.submenu-btn-minus').on('click', function(e) {
       $('.mobile-submenu').toggleClass("descended");
+      $('.page-wrap').toggleClass("descended-further");
       $('.submenu-btn-minus').hide();
       $('.submenu-btn-plus').show();
       e.preventDefault();
