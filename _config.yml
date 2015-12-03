@@ -23,3 +23,15 @@ links:
 
 # Build settings
 markdown: kramdown
+exclude: [
+	'node_modules',
+	'bower_components',
+	'bower.json',
+	'package.json',
+	'gulpfile.js'
+]
+keep_files: [
+  'css',
+  'js',
+  'maps'
+]

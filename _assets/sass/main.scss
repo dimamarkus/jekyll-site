@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+@import 'foundation';
+
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-flex-video;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-menu;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+
+@import 'global/colors';
+@import 'global/fonts';
+@import 'global/layout';
+@import 'global/text';
+@import 'global/links';
+@import 'global/images';
+
+
+html {
+	text-align: center;
+}
+
+div.container  {
+  margin: 0 auto;
+  margin-right: -50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.thin {
+	font-weight: 100;
+}
+
+ul.social-icons {
+	margin-top: 3rem;
+	list-style: none;
+	li {
+		display: inline-block;
+		margin: .6rem auto;
+		margin-right: 3rem;
+		a {
+			font-weight: 200;
+			font-size: 2rem;
+			text-decoration: none;
+			color: $primary-color;
+		}
+		i.fa {
+			color: $primary-color;
+		}
+		img {
+			position: relative;
+			top: .2rem;
+			max-width: 3.2rem;
+		}
+	}
+}
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+
+
+
+

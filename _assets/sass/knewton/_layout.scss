@@ -1,0 +1,59 @@
+.page-wrap {
+	border-top: 1px solid #e2e2e2;
+	background: white;
+	transition: all .4s ease;
+	position: relative;
+	z-index: 100;
+	@include media-query($on-large-screen) {
+		margin-top: -22rem;
+		border-color: $primary-color;
+	}
+	&.descended {
+	 margin-top: 0;
+	}
+	&.descended-further {
+	 margin-top: 6rem;
+	}
+}
+
+body {
+  text-align: center;
+}
+
+.inner {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+section {
+	padding: 3rem 2rem 1rem 2rem;
+}
+
+section.example-section {
+  h1 {
+		margin-top: 3.5rem;
+ 	  margin-bottom: 5rem;
+  }
+  article {
+  	margin-bottom: 10rem;
+  	p {
+  		margin-top: 3rem;
+  		font-size: 2rem;
+  	}
+  }
+}
+
+.blurb {
+	@include media-query(1920px) {
+		padding: 0 8rem;
+	}
+	@include media-query(1450px) {
+		padding: 0 6rem;
+	}
+	@include media-query(800px) {
+		padding: 0 4rem;
+	}
+	@include media-query(600px) {
+		padding: 0 0;
+	}
+}

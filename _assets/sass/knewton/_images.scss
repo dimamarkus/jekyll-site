@@ -1,0 +1,44 @@
+.logo {
+	display: inline-block;
+	max-width: 25rem;
+	@include media-query(560px) {
+		max-width: 18rem;
+	}
+}
+
+.hero-image {
+	width: 100%;
+	min-height: 45rem;
+	// margin-top: 6rem;
+	background-image: url('/images/knewton/knewton-apple.png');
+	background-position: center 75%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	@include media-query(1000px) {
+		min-height: 40rem;
+		margin-top: 2rem;
+	}
+	@include media-query(1500px) {
+		background-size: cover;
+	}
+}
+
+.example-image {
+	@include media-query(2000px) {
+		max-width: 65%;
+	}
+	@include media-query(1500px) {
+		max-width: 75%;
+	}
+	@include media-query(1000px) {
+		max-width: 85%;
+	}
+	@include media-query(800px) {
+		max-width: 100%;
+	}
+	margin: 0 auto;
+}
+
+.bug-report img {
+	border: 2px dashed #989898;
+}

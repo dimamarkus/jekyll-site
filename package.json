@@ -1,0 +1,20 @@
+{
+  "name": "dimamarkus.com",
+  "version": "0.0.1",
+  "dependencies": {
+    "gulp": "*",
+    "gulp-autoprefixer":     "*",
+    "gulp-changed":          "*",
+    "gulp-concat":           "*",
+    "gulp-minify-css":       "*",
+    "gulp-plumber":          "*",
+    "gulp-ruby-sass":        "*",
+    "gulp-rename":           "*",
+    "gulp-sourcemaps":       "*",
+    "gulp-uglify":           "*",
+    "bower-files":           "*",
+    "browser-sync":          "*",
+    "run-sequence":          "*",
+    "del":                   "*"
+  }
+}

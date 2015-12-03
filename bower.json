@@ -1,0 +1,6 @@
+{
+  "name": "dimamarkus.com",
+  "dependencies": {
+    "foundation-sites": "~6.0.0"
+  }
+}

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+// Our variables
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+$spacing-unit:     30px;
+
+// Width of the content area
+$content-width:     800px;
+$on-small-screen:   520px;
+$on-medium-screen:  995px;
+$on-large-screen:   1280px;
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@import
+  "knewton/colors",
+  "knewton/fonts",
+  "knewton/layout",
+  "knewton/text",
+  "knewton/buttons",
+  "knewton/links",
+  "knewton/header",
+  "knewton/footer",
+  "knewton/navigation",
+  "knewton/modals",
+  "knewton/badges",
+  "knewton/sections",
+  "knewton/images"
+;
+
+
+
+

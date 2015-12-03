@@ -1,0 +1,74 @@
+.badge {
+	border-radius: 100%;
+		display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+ 	margin: 0 auto;
+	margin-bottom: 3rem;
+}
+
+.experience-icon {
+	background: $primary-color;
+	width: 16rem;
+	height: 16rem;
+	color: white;
+	font-size: 7rem;
+	i.fa {
+		color: white;
+		margin: auto;
+	}
+	span {
+		color: white;
+		font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		font-size: 3.25rem;
+		margin: auto;
+	}
+	&.alert{
+		background: $alert-color;
+	}
+	&.warning{
+		background: $warning-color;
+	}
+	&.success{
+		background: $success-color;
+	}
+}
+
+.stat-icon {
+	background: white;
+	color: $primary-color;
+	font-size: 4rem;
+	font-weight: 300;
+	width: 13rem;
+	height: 13rem;
+	line-height: 1;
+  .center {
+  	margin: auto;
+  }
+	span.units {
+		display: block;
+		color: #909090;
+		text-transform: uppercase;
+		font-size: 1.1rem;
+		font-weight: 500;
+	}
+	span.plus {
+		font-size: 2rem;
+		position: relative;
+		top: -1rem;
+		left: -.5rem;
+	}
+	span:not(.units) {
+		color: $primary-color;
+	}
+	&.info span:not(.units) {
+		color: $info-color;
+	}
+	&.warning span:not(.units) {
+		color: $warning-color;
+	}
+	&.success span:not(.units) {
+		color: $success-color;
+	}
+}

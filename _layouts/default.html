@@ -1,32 +1,8 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Dima Markus | UX Designer</title>
-        <meta name="description" content="A UX designer who codes">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href='//fonts.googleapis.com/css?family=Montserrat:400,700'>
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
-       	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-				<div class="container">
-	        {{ content }}
-				</div>
+{% include _meta/head.html %}
+{% include _meta/base.html %}
 
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-34226981-1','auto');ga('send','pageview');
-        </script>
-    </body>
-</html>
+{% include global/header.html %}
+  {{ content }}
+{% include global/footer.html %}
+
+{% include _meta/foot.html %}

@@ -1,0 +1,38 @@
+Clarify the complex choices designers have to make and explain their thinking behind UX and visual decisions.
+
+- State Both Broad And Concrete Goals
+- Define your broad project goal early in the case study, with a focus on larger issues like community, the environment or empowerment.
+- Attach your concrete goal to the deliverables of the project or the technical problems you hope to solve.
+
+- Illustrate your design process to the reader with simple, easy-to-understand steps, ones that they can duplicate in their own projects.
+- Show photographs of your team working collaboratively, in situations that illustrate your design process.
+- If possible, list your collaborators and the roles they played. This moves the case study towards an exploration of people and process, beyond simply a description of design deliverables.
+
+
+- Show your research with photos, charts or a list of findings, even if it is not packaged neatly.
+- For code, tools such as GitHub’s Gist or CodePen can illustrate your research to the technically savvy.
+- Show relationships between data, research and design artifact, either in writing or by associating them visually for readers to compare.
+
+---
+
+# Provide people confidence in buying bespoke clothing online.
+
+## By creating a clear, focused and frictionless experience from the first visit to the item delivery and beyond.
+
+### 0. Introduction
+
+
+
+###  1. Start Mobile First with as clean a slate as possible
+
+
+###  2. Focus on the unique element. In this case the measurement entry.
+
+
+###  3. Rethink and reconsider existing paradigms such as the traditional cart checkout process.
+
+
+###  4. Develop consistency throughout the design, front and back end.
+
+
+###  5. Componentize and re-use. 
