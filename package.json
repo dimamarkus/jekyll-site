@@ -6,6 +6,7 @@
     "gulp-autoprefixer":     "*",
     "gulp-changed":          "*",
     "gulp-concat":           "*",
+    "gulp-markdown":         "*",
     "gulp-minify-css":       "*",
     "gulp-plumber":          "*",
     "gulp-ruby-sass":        "*",

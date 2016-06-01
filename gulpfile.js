@@ -2,6 +2,7 @@ var gulp            = require("gulp"),
     autoprefixer    = require("gulp-autoprefixer"),
     changed         = require("gulp-changed"),
     concat          = require("gulp-concat"),
+    markdown        = require('gulp-markdown'),
     uglify          = require("gulp-uglify"),
     plumber         = require("gulp-plumber"),
     rename          = require("gulp-rename"),
@@ -50,6 +51,7 @@ gulp.task('sync', function() {
   gulp.watch('_assets/sass/**/*.scss',  ['css']);
   gulp.watch('_assets/js/**/*.js',      ['js']);
   gulp.watch('**/*.html',               ['jekyll', browserSync.reload]);
+  gulp.watch('**/*.md',                 ['html', browserSync.reload]);
 });
 
 gulp.task('browserSync', function() {
@@ -58,6 +60,16 @@ gulp.task('browserSync', function() {
       baseDir: '_site'
     }
   });
+});
+
+gulp.task('html', function(cb) {
+  runSequence('markdown', ['jekyll'], cb);
+})
+
+gulp.task('markdown', function() {
+  return gulp.src('case_studies/sapayol.md')
+    .pipe(markdown())
+    .pipe(gulp.dest('case_studies/sapayol.html'));
 });
 
 

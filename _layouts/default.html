@@ -1,8 +1,16 @@
 {% include _meta/head.html %}
 {% include _meta/base.html %}
 
-{% include global/header.html %}
+<div class="row">
+	{% include global/header.html %}
+</div>
+
+<div class="row">
   {{ content }}
-{% include global/footer.html %}
+</div>
+
+<div class="row">
+	{% include global/footer.html %}
+</div>
 
 {% include _meta/foot.html %}

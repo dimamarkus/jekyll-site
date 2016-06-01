@@ -46,24 +46,6 @@
 @import 'global/images';
 
 
-html {
-	text-align: center;
-}
-
-div.container  {
-  margin: 0 auto;
-  margin-right: -50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.thin {
-	font-weight: 100;
-}
 
 ul.social-icons {
 	margin-top: 3rem;
@@ -89,11 +71,7 @@ ul.social-icons {
 	}
 }
 
-@mixin media-query($device) {
-  @media screen and (max-width: $device) {
-    @content;
-  }
-}
+
 
 
 
